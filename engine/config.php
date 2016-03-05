@@ -2,13 +2,13 @@
 
 class config{
 	#Host name of your DB
-	var $hostname = 'mysql.hostinger.ru';
+	var $hostname = 'localhost';
 	#Username of your DB
-	var $username = 'u368304003_root';
+	var $username = 'root';
 	#Password of your DB
-	var $password = '123456';
+	var $password = '';
 	#DB name
-	var $db = 'u368304003_hwk';
+	var $db = 'HWK';
 	#Smarty Settings
 	var $cacheValue = false;
 	var $cacheLifetime = 120;
