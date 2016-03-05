@@ -1,0 +1,13 @@
+body {
+    background-image: url(../images/background.png);
+    background-color: #FFF;
+   }
+.content{
+	margin-top: 7%;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+.content-in{
+	margin-left: 35%;
+	margin-right: 35%;
+}
