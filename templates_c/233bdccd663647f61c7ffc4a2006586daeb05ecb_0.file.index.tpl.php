@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-03-05 19:11:48
+/* Smarty version 3.1.29, created on 2016-03-05 19:25:20
   from "D:\Web\OpenServer\domains\localhost\themes\todo\index.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_56db0544033b52_59776510',
+  'unifunc' => 'content_56db0870039599_97318817',
   'file_dependency' =>
   array (
     '233bdccd663647f61c7ffc4a2006586daeb05ecb' =>
     array (
       0 => 'D:\\Web\\OpenServer\\domains\\localhost\\themes\\todo\\index.tpl',
-      1 => 1457194149,
+      1 => 1457195118,
       2 => 'file',
     ),
   ),
@@ -25,7 +25,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
     'file:error.tpl' => 1,
   ),
 ),false)) {
-function content_56db0544033b52_59776510 ($_smarty_tpl) {
+function content_56db0870039599_97318817 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -42,7 +42,7 @@ function content_56db0544033b52_59776510 ($_smarty_tpl) {
 		<header>
 			<div class="header_wrapper">
 				<div class="header_left_side">
-					<img src="themes/todo/img/logo.png" width="22" height="39" alt="лого">
+					<img src="themes/todo/img/logo.png" width="22" height="40" alt="Logotype">
 				</div>
 				<div class="header_middle">
 					<nav>

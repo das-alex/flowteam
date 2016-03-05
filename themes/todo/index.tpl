@@ -12,7 +12,7 @@
 		<header>
 			<div class="header_wrapper">
 				<div class="header_left_side">
-					<img src="themes/todo/img/logo.png" width="22" height="39" alt="лого">
+					<img src="themes/todo/img/logo.png" width="22" height="40" alt="Logotype">
 				</div>
 				<div class="header_middle">
 					<nav>
