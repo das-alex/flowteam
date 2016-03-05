@@ -18,6 +18,7 @@ $mysql->setBase($config->db);
 $page = get_str_check($_GET['page']);
 
 $template->template_dir = ROOT_DIR . '/themes/' . $config->theme . '/';
+$template->compile_dir = ENGINE_DIR . '/hidden/themes_c/';
 $template->config_dir = ENGINE_DIR . '/hidden/config/';
 $template->cache_dir = ENGINE_DIR . '/hidden/cache/';
 $template->caching = $config->cacheValue;
