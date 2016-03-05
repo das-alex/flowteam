@@ -81,47 +81,33 @@ a {
 	cursor: pointer;
 }
 
-<<<<<<< HEAD
-/**/
+/*HEAD*/
 .panel {
-=======
-.panel{
->>>>>>> flow/master
     border: 0.5px;
     border-style: solid;
     border-color: #d2d3d6;
     margin: 5px;
 }
 
-<<<<<<< HEAD
 .panel .panel-head {
-=======
-.panel .panel-head{
->>>>>>> flow/master
     padding: 10px;
     background-color: #f6f7f8;
 }
 
-<<<<<<< HEAD
-.panel .panel-content {
-=======
 .panel .panel-content{
->>>>>>> flow/master
     padding: 10px;
     background-color: #FFF;
 }
 
-<<<<<<< HEAD
-.info {
-=======
 .info{
->>>>>>> flow/master
     margin: 5px;
     font-size: 14px;
 }
+
 .space{
     text-align: center;
 }
+
 .space .smLeft{
     position: absolute;
     width: 50%;
