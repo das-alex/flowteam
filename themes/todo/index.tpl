@@ -17,7 +17,9 @@
 				<div class="header_middle">
 					<nav>
 						<ul>
-							<a href="/index.php"><li {if $enableIndex == true}class="active"{/if}><i class="fa fa-home"></i>Главная</li></a>
+							<a href="/index.php">
+                           		<li {if $enableIndex == true}class="active"{/if}><i class="fa fa-home"></i>Главная</li>
+                           	</a>
                             <a href="/index.php?page=contacts">
                                 <li {if $enableContacts == true}class="active"{/if}><i class="fa fa-user"></i>Контакты</li>
                             </a>

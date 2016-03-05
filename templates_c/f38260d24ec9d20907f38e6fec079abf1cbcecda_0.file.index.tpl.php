@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-03-05 19:25:20
-  from "D:\Web\OpenServer\domains\localhost\themes\todo\index.tpl" */
+/* Smarty version 3.1.29, created on 2016-03-05 20:26:37
+  from "D:\alexzh\projects\todo\themes\todo\index.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_56db0870039599_97318817',
+  'unifunc' => 'content_56db32edc0cd22_39973068',
   'file_dependency' =>
   array (
-    '233bdccd663647f61c7ffc4a2006586daeb05ecb' =>
+    'f38260d24ec9d20907f38e6fec079abf1cbcecda' =>
     array (
-      0 => 'D:\\Web\\OpenServer\\domains\\localhost\\themes\\todo\\index.tpl',
-      1 => 1457195118,
+      0 => 'D:\\alexzh\\projects\\todo\\themes\\todo\\index.tpl',
+      1 => 1457204684,
       2 => 'file',
     ),
   ),
@@ -25,7 +25,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
     'file:error.tpl' => 1,
   ),
 ),false)) {
-function content_56db0870039599_97318817 ($_smarty_tpl) {
+function content_56db32edc0cd22_39973068 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -47,7 +47,9 @@ function content_56db0870039599_97318817 ($_smarty_tpl) {
 				<div class="header_middle">
 					<nav>
 						<ul>
-							<a href="/index.php"><li <?php if ($_smarty_tpl->tpl_vars['enableIndex']->value == true) {?>class="active"<?php }?>><i class="fa fa-home"></i>Главная</li></a>
+							<a href="/index.php">
+                           		<li <?php if ($_smarty_tpl->tpl_vars['enableIndex']->value == true) {?>class="active"<?php }?>><i class="fa fa-home"></i>Главная</li>
+                           	</a>
                             <a href="/index.php?page=contacts">
                                 <li <?php if ($_smarty_tpl->tpl_vars['enableContacts']->value == true) {?>class="active"<?php }?>><i class="fa fa-user"></i>Контакты</li>
                             </a>

@@ -80,21 +80,26 @@ a {
 	border-radius: 4px;
 	cursor: pointer;
 }
-.panel{
+
+/**/
+.panel {
     border: 0.5px;
     border-style: solid;
     border-color: #d2d3d6;
     margin: 5px;
 }
-.panel .panel-head{
+
+.panel .panel-head {
     padding: 10px;
     background-color: #f6f7f8;
 }
-.panel .panel-content{
+
+.panel .panel-content {
     padding: 10px;
     background-color: #FFF;
 }
-.info{
+
+.info {
     margin: 5px;
     font-size: 14px;
 }
