@@ -74,10 +74,12 @@ switch ($page){
 if (isset($_COOKIE['id']) and isset($_COOKIE['hash'])){
 	$userdata = $database->fetchAssoc($connectHost, "SELECT * FROM HWK_Users WHERE user_id = '".intval($_COOKIE['id'])."' LIMIT 1");
 	if(($userdata['user_hash'] == $_COOKIE['hash']) or ($userdata['user_id'] == $_COOKIE['id'])){
-		$template->assign('auth_state',true);
-		$template->assign('user_name',$userdata['user_name']);
-		$template->assign('user_id',$userdata['user_id']);
-	}
+		$template->assign('isLogin',true);
+		$template->assign('userName',$userdata['user_name']);
+		$template->assign('userId',$userdata['user_id']);
+	}else{
+        $template->assign('isLogin', false);
+    }
 }
 
 $template->assign('TEMPLATE', ROOT_DIR . '/themes/' . $config->theme);

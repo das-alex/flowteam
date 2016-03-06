@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-03-06 15:49:22
+/* Smarty version 3.1.29, created on 2016-03-06 19:48:04
   from "D:\Web\OpenServer\domains\localhost\themes\todo\index.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_56dc2752033866_65171048',
+  'unifunc' => 'content_56dc5f449f5da3_80919267',
   'file_dependency' =>
   array (
     '233bdccd663647f61c7ffc4a2006586daeb05ecb' =>
     array (
       0 => 'D:\\Web\\OpenServer\\domains\\localhost\\themes\\todo\\index.tpl',
-      1 => 1457268555,
+      1 => 1457282870,
       2 => 'file',
     ),
   ),
@@ -24,9 +24,10 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
     'file:discussions.tpl' => 1,
     'file:news.tpl' => 1,
     'file:error.tpl' => 1,
+    'file:auth.tpl' => 1,
   ),
 ),false)) {
-function content_56dc2752033866_65171048 ($_smarty_tpl) {
+function content_56dc5f449f5da3_80919267 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -77,23 +78,24 @@ function content_56dc2752033866_65171048 ($_smarty_tpl) {
 		</header>
 		<main>
             <div class="info">
+                <?php if ($_smarty_tpl->tpl_vars['isLogin']->value == true) {?>
                 <!--
                     Главная страница
                 -->
-                <?php if ($_smarty_tpl->tpl_vars['enableIndex']->value == true) {?>
-                    <?php $_smarty_tpl->smarty->ext->_subtemplate->render($_smarty_tpl, "file:content.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+                    <?php if ($_smarty_tpl->tpl_vars['enableIndex']->value == true) {?>
+                        <?php $_smarty_tpl->smarty->ext->_subtemplate->render($_smarty_tpl, "file:content.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
-                <?php }?>
+                    <?php }?>
                 <!--
                     Условие, при котором будет появляться список контактов.
                     index.php?page=contacts
                 -->
-				<?php if ($_smarty_tpl->tpl_vars['enableContacts']->value == true) {?>
-                    <?php $_smarty_tpl->smarty->ext->_subtemplate->render($_smarty_tpl, "file:contacts.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+				    <?php if ($_smarty_tpl->tpl_vars['enableContacts']->value == true) {?>
+                        <?php $_smarty_tpl->smarty->ext->_subtemplate->render($_smarty_tpl, "file:contacts.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
-                <?php }?>
+                    <?php }?>
                 <!--
                     Условие, при котором будет появляться список сообщений.
                     index.php?page=messages
@@ -107,35 +109,40 @@ function content_56dc2752033866_65171048 ($_smarty_tpl) {
                     Условие, при котором будет появляться список проектов.
                     index.php?page=projects
                 -->
-				<?php if ($_smarty_tpl->tpl_vars['enableProjects']->value == true) {?>
-                    <?php $_smarty_tpl->smarty->ext->_subtemplate->render($_smarty_tpl, "file:projects.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+				    <?php if ($_smarty_tpl->tpl_vars['enableProjects']->value == true) {?>
+                        <?php $_smarty_tpl->smarty->ext->_subtemplate->render($_smarty_tpl, "file:projects.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
-                <?php }?>
+                    <?php }?>
                 <!--
                     Условие, при котором будет появляться список обсуждений.
                     index.php?page=discussions
                 -->
-				<?php if ($_smarty_tpl->tpl_vars['enableDiscussions']->value == true) {?>
-                    <?php $_smarty_tpl->smarty->ext->_subtemplate->render($_smarty_tpl, "file:discussions.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+				    <?php if ($_smarty_tpl->tpl_vars['enableDiscussions']->value == true) {?>
+                        <?php $_smarty_tpl->smarty->ext->_subtemplate->render($_smarty_tpl, "file:discussions.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
-                <?php }?>
+                    <?php }?>
                 <!--
                     Условие, при котором будет появляться список проектов.
                     index.php?page=news
                 -->
-				<?php if ($_smarty_tpl->tpl_vars['enableNews']->value == true) {?>
-                    <?php $_smarty_tpl->smarty->ext->_subtemplate->render($_smarty_tpl, "file:news.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+				    <?php if ($_smarty_tpl->tpl_vars['enableNews']->value == true) {?>
+                        <?php $_smarty_tpl->smarty->ext->_subtemplate->render($_smarty_tpl, "file:news.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
-                <?php }?>
+                    <?php }?>
                 <!--
                     Условие, при котором будет появляться ошибка.
                     index.php?page=[Неверный Адрес]
                 -->
-				<?php if ($_smarty_tpl->tpl_vars['enableError']->value == true) {?>
-                    <?php $_smarty_tpl->smarty->ext->_subtemplate->render($_smarty_tpl, "file:error.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+				    <?php if ($_smarty_tpl->tpl_vars['enableError']->value == true) {?>
+                        <?php $_smarty_tpl->smarty->ext->_subtemplate->render($_smarty_tpl, "file:error.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?>
+
+                    <?php }?>
+                <?php } else { ?>
+                    <?php $_smarty_tpl->smarty->ext->_subtemplate->render($_smarty_tpl, "file:auth.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
                 <?php }?>
