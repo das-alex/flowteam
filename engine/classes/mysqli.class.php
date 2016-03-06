@@ -1,43 +1,37 @@
 <?php
 class database{
     function setHost($hostname, $username, $password, $basename){
-        $connectHost = new mysqli($hostname, $username, $password, $basename)
-
-        if ( mysql_connect_errno() ){
-            exit();
-            return false;
-        }
+        $connectHost = new mysqli($hostname, $username, $password, $basename);
 
         return $connectHost;
     }
 
-    function queryExecute($query){
-        $result = $mysqli->query($query);
+    function queryExecute($link, $query){
+        $result = $mysqli->query($link, $query);
 
         return $result;
     }
 
-    function queryPrepare($query){
-        $result = mysql->prepare($query);
+    function fetchRow($link, $query){
+        $result = mysqli_query($link, $query);
+        $row = array();
 
-        return $result;
+        while ($item = mysqli_fetch_array($result)){
+            $row[] = $item;
         }
 
-        return true;
+        return $row;
     }
 
-    function valueArray($query){
-        $result = $mysql->query($query);
+    function fetchAssoc($link, $query){
+        $result = mysqli_query($link, $query);
+        $fetch = mysqli_fetch_assoc($result);
 
-        while($row = $result->fetch_row()){
-            $array[] = $row;
-        }
-
-        return $array;
+        return $fetch;
     }
 
-    function closeHost(){
-        $mysqli_close();
+    function closeHost($link){
+        mysqli_close($link);
 
         return true;
     }
