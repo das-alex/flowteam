@@ -81,7 +81,6 @@ if (isset($_COOKIE['id']) and isset($_COOKIE['hash'])){
 }
 
 $template->assign('TEMPLATE', ROOT_DIR . '/themes/' . $config->theme);
-
 $template->display('index.tpl');
 $database->closeHost($connectHost);
 ?>

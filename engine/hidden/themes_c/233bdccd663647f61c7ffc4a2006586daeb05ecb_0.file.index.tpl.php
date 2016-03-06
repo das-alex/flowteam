@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-03-05 22:28:42
+/* Smarty version 3.1.29, created on 2016-03-06 15:49:22
   from "D:\Web\OpenServer\domains\localhost\themes\todo\index.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_56db336ae03d70_56821495',
+  'unifunc' => 'content_56dc2752033866_65171048',
   'file_dependency' =>
   array (
     '233bdccd663647f61c7ffc4a2006586daeb05ecb' =>
     array (
       0 => 'D:\\Web\\OpenServer\\domains\\localhost\\themes\\todo\\index.tpl',
-      1 => 1457205348,
+      1 => 1457268555,
       2 => 'file',
     ),
   ),
@@ -26,7 +26,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
     'file:error.tpl' => 1,
   ),
 ),false)) {
-function content_56db336ae03d70_56821495 ($_smarty_tpl) {
+function content_56dc2752033866_65171048 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -48,7 +48,9 @@ function content_56db336ae03d70_56821495 ($_smarty_tpl) {
 				<div class="header_middle">
 					<nav>
 						<ul>
-							<a href="/index.php"><li <?php if ($_smarty_tpl->tpl_vars['enableIndex']->value == true) {?>class="active"<?php }?>><i class="fa fa-home"></i>Главная</li></a>
+							<a href="/index.php">
+                           		<li <?php if ($_smarty_tpl->tpl_vars['enableIndex']->value == true) {?>class="active"<?php }?>><i class="fa fa-home"></i>Главная</li>
+                           	</a>
                             <a href="/index.php?page=contacts">
                                 <li <?php if ($_smarty_tpl->tpl_vars['enableContacts']->value == true) {?>class="active"<?php }?>><i class="fa fa-user"></i>Контакты</li>
                             </a>

@@ -12,7 +12,7 @@ class database{
         return $result;
     }
 
-    function fetchRow($link, $query){
+    function fetchArray($link, $query){
         $result = mysqli_query($link, $query);
         $row = array();
 
