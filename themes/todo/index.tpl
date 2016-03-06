@@ -16,6 +16,7 @@
 				</div>
 				<div class="header_middle">
 					<nav>
+                        {if $isLogin == true}
 						<ul>
 							<a href="/index.php">
                            		<li {if $enableIndex == true}class="active"{/if}><i class="fa fa-home"></i>Главная</li>
@@ -36,6 +37,7 @@
                                 <li {if $enableNews == true}class="active"{/if}><i class="fa fa-newspaper-o"></i>Новости</li>
                             </a>
 						</ul>
+                        {/if}
 					</nav>
 				</div>
 				<div class="header_right_side">
@@ -47,56 +49,41 @@
 		<main>
             <div class="info">
                 {if $isLogin == true}
-                <!--
-                    Главная страница
-                -->
+
                     {if $enableIndex == true}
                         {include file="content.tpl"}
                     {/if}
-                <!--
-                    Условие, при котором будет появляться список контактов.
-                    index.php?page=contacts
-                -->
+
 				    {if $enableContacts == true}
                         {include file="contacts.tpl"}
                     {/if}
-                <!--
-                    Условие, при котором будет появляться список сообщений.
-                    index.php?page=messages
-                -->
-				{if $enableMessages == true}
-                    {include file="messages.tpl"}
-                {/if}
-                <!--
-                    Условие, при котором будет появляться список проектов.
-                    index.php?page=projects
-                -->
+
+				    {if $enableMessages == true}
+                        {include file="messages.tpl"}
+                    {/if}
+
 				    {if $enableProjects == true}
                         {include file="projects.tpl"}
                     {/if}
-                <!--
-                    Условие, при котором будет появляться список обсуждений.
-                    index.php?page=discussions
-                -->
+
 				    {if $enableDiscussions == true}
                         {include file="discussions.tpl"}
                     {/if}
-                <!--
-                    Условие, при котором будет появляться список проектов.
-                    index.php?page=news
-                -->
+
 				    {if $enableNews == true}
                         {include file="news.tpl"}
                     {/if}
-                <!--
-                    Условие, при котором будет появляться ошибка.
-                    index.php?page=[Неверный Адрес]
-                -->
+
 				    {if $enableError == true}
                         {include file="error.tpl"}
                     {/if}
+
                 {else}
-                    {include file="auth.tpl"}
+                        {if $enableReg == true}
+                            {include file="registration.tpl"}
+                        {else}
+                            {include file="auth.tpl"}
+                        {/if}
                 {/if}
 			</div>
 		</main>

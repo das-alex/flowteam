@@ -7,7 +7,7 @@ class database{
     }
 
     function queryExecute($link, $query){
-        $result = $mysqli->query($link, $query);
+        $result = mysqli_query($link, $query);
 
         return $result;
     }
@@ -28,6 +28,19 @@ class database{
         $fetch = mysqli_fetch_assoc($result);
 
         return $fetch;
+    }
+
+    function queryNum($link, $query){
+        $result = mysqli_query($link, $query);
+        $num = mysqli_num_rows($result);
+
+        return $num;
+    }
+
+    function stringEscape($link, $string){
+        $result = mysqli_real_escape_string($link, $string);
+
+        return $result;
     }
 
     function closeHost($link){

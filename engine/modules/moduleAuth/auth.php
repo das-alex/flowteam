@@ -2,7 +2,7 @@
 require 'msg.php';
 
 $template->assign('title','Auth Page');
-$template->assign('auth_enable',true);
+$template->assign('enableAuth',true);
 
 $username = $_POST['username'];
 $password = $_POST['password'];
@@ -29,7 +29,7 @@ if (isset($_POST['submit'])){
 		$template->assign($auth_message, $msg_array[0]);
 	}
 
-	$database->fetchAssoc($connectHost, "SELECT * FROM `HWK_Users` WHERE `user_name`='".$username."' LIMIT 1");
+	$data = $database->fetchAssoc($connectHost, "SELECT * FROM `HWK_Users` WHERE `user_name`='".mysqli_real_escape_string($connectHost, $username)."' LIMIT 1");
 
 	if($data['user_password'] == md5(md5($password))){
 		$hash = md5(generateCode(10));
@@ -40,7 +40,7 @@ if (isset($_POST['submit'])){
 
 		header("Location: index.php"); exit();
 	}else{
-		$template->assign($auth_message, $msg_array[3]);
+		$template->assign($auth_message, 'Nick ' . $data['user_password']);
 	}
 	$template->assign('msgState', true);
 }
