@@ -1,4 +1,4 @@
-<div class="info">
+
     <div class="space">
         <div class="smLeft">
             <div class="panel">
@@ -35,4 +35,4 @@
             </div>
         </div>
     </div>
-</div>
+

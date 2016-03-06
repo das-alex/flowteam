@@ -39,13 +39,15 @@
 					</nav>
 				</div>
 				<div class="header_right_side">
-
+					<p>username</p>
+					<div>
+						<img src="http://placehold.it/40x40" width="40" height="40" alt="avatar">
+					</div>
 				</div>
-
 			</div>
 		</header>
 		<main>
-            <div class="info">
+            <div class="main_wrapper">
                 <!--
                     Главная страница
                 -->
