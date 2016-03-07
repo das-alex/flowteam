@@ -1,16 +1,19 @@
-<div class="panel">
-    <div class="panel-head">
-        Форма входа
-    </div>
-    <div class="panel-content">
-        {if msgState == true}
-            {$errorMsg}
-        {/if}
-        <form method="POST" action="index.php?page=auth">
-            <input class="input" type="text" name="username">
-            <input class="input" type="password" name="password">
-            <input class="button color" type="submit" name="submit">
-        </form>
-        <a href="/index.php?page=reg">Регистрация</a>
-    </div>
+<div class="form_login">
+	<h1>Добро пожаловть!</h1>
+	<p>Для продолжения необходимо зарегестрироваться или войти</p>
+	{if msgState == true}
+		{$errorMsg}
+	{/if}
+	<form method="POST" action="index.php?page=auth">
+		<div>
+			<span class="input_before"><i class="fa fa-user"></i></span>
+			<input type="text" name="username" placeholder="имя пользователя">
+		</div>
+		<div>
+			<span class="input_before"><i class="fa fa-key"></i></span>
+			<input type="password" name="password" placeholder="пароль">
+		</div>
+		<input class="login_button" type="submit">
+	</form>
+	<a href="/index.php?page=reg">Регистрация</a>
 </div>

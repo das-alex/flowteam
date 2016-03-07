@@ -268,3 +268,90 @@ input[type=button],[type=submit],
 }
 
 /*CONTACTS_PAGE END*/
+
+/*FORM LOGIN START*/
+
+.form_login {
+	position: absolute;
+	width: 400px;
+	height: 450px;
+	background: white;
+	border-radius: 10px;
+	text-align: center;
+	margin: auto;
+	top: 50px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	box-shadow: 0 0 4px -1px #8b8b8b;
+}
+
+.form_login h1 {
+	color: #272727;
+	margin: 30px 0 20px 0;
+}
+
+.form_login p {
+	color: #272727;
+	padding: 0 10px;
+}
+
+.form_login form {
+	margin-top: 35px;
+}
+
+.form_login .input_before {
+	display: inline-block;
+	padding: 10px 18px;
+	border-top-left-radius: 50px;
+	border-bottom-left-radius: 50px;
+	background: #ececec;
+	font-size: 17px;
+	position: absolute;
+	margin: 10px -20px 0 0;
+	color: #162953;
+}
+
+.form_login input {
+	border: none;
+	background: #ececec;
+	font-size: 18px;
+	padding: 10px 0 10px 60px;
+	width: 250px;
+	margin: 10px 0;
+	border-radius: 50px;
+	border: 1px solid #ececec;
+}
+
+.form_login input:focus {
+	transition: all .4s;
+	background: white;
+}
+
+.form_login .login_button {
+	background: #4bb257;
+	color: white;
+	width: 210px;
+	padding: 10px 20px;
+	margin-top: 30px;
+	box-shadow: 0 0 5px 0 #969696;
+	cursor: pointer;
+	border: none;
+}
+
+.form_login .login_button:hover {
+	transition: all .4s;
+	background: #51c15e;
+}
+
+.form_login .login_button:active {
+	transition: none;
+	box-shadow: none;
+}
+
+.form_login .login_button:focus {
+	transition: all .4s;
+	background: #51c15e;
+}
+
+/*FORM LOGIN END*/
