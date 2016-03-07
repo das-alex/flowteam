@@ -13,7 +13,7 @@
 			<span class="input_before"><i class="fa fa-key"></i></span>
 			<input type="password" name="password" placeholder="пароль">
 		</div>
-		<input class="login_button" type="submit">
+		<input class="login_button" type="submit" name="submit">
 	</form>
 	<a href="/index.php?page=reg">Регистрация</a>
 </div>
