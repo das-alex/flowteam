@@ -12,6 +12,10 @@ a,input {
 	outline: none;
 }
 
+.bold {
+	font-weight: 600;
+}
+
 .flex_container {
 	display: flex;
 	flex-direction: column;
@@ -279,7 +283,7 @@ input[type=button],[type=submit],
 
 /*FORM LOGIN START*/
 
-.form_login {
+.form_log_reg {
 	position: absolute;
 	width: 400px;
 	height: 360px;
@@ -294,23 +298,24 @@ input[type=button],[type=submit],
 	box-shadow: 0 0 3px -1px #a2a2a2;
 }
 
-.form_login h1 {
-	color: #272727;
-	font-size: 28px;
-	margin: 20px 0 15px 0;
+.height_reg {
+	height: 460px;
 }
 
-.form_login p {
+.form_log_reg h1 {
+	color: #272727;
+	font-size: 28px;
+	margin-top: 20px;
+}
+
+.form_log_reg p {
 	color: #272727;
 	padding: 0 50px;
 	font-size: 14px;
+	margin: 10px 0 25px 0;
 }
 
-.form_login form {
-	margin-top: 25px;
-}
-
-.form_login .input_before {
+.form_log_reg .input_before {
 	display: inline-block;
 	padding: 10px 14px;
 	border-top-left-radius: 4px;
@@ -322,7 +327,7 @@ input[type=button],[type=submit],
 	color: #162953;
 }
 
-.form_login input {
+.form_log_reg input {
 	border: none;
 	background: #ececec;
 	font-size: 15px;
@@ -333,12 +338,12 @@ input[type=button],[type=submit],
 	border: 1px solid #ececec;
 }
 
-.form_login input:focus {
+.form_log_reg input:focus {
 	transition: all .4s;
 	background: white;
 }
 
-.form_login .login_button {
+.form_log_reg .login_button {
 	background: #4bb257;
 	color: white;
 	width: 180px;
@@ -349,17 +354,17 @@ input[type=button],[type=submit],
 	border: none;
 }
 
-.form_login .login_button:hover {
+.form_log_reg .login_button:hover {
 	transition: all .4s;
 	background: #51c15e;
 }
 
-.form_login .login_button:active {
+.form_log_reg .login_button:active {
 	transition: none;
 	box-shadow: none;
 }
 
-.form_login .login_button:focus {
+.form_log_reg .login_button:focus {
 	transition: all .4s;
 	background: #51c15e;
 }

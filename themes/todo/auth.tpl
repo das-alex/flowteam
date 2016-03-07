@@ -1,6 +1,6 @@
-<div class="form_login">
+<div class="form_log_reg">
 	<h1>Добро пожаловть!</h1>
-	<p>Для продолжения необходимо зарегестрироваться или войти</p>
+	<p>Для продолжения необходимо зарегестрироваться или <span class="bold">войти</span></p>
 	{if msgState == true}
 		{$errorMsg}
 	{/if}
