@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-03-06 21:41:01
+/* Smarty version 3.1.29, created on 2016-03-07 15:51:44
   from "D:\Web\OpenServer\domains\localhost\themes\todo\registration.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_56dc79bd5683f5_70697056',
+  'unifunc' => 'content_56dd7960655188_75444112',
   'file_dependency' =>
   array (
     'c8c124e0716e4fe62113ec04036f636d1fba41ba' =>
     array (
       0 => 'D:\\Web\\OpenServer\\domains\\localhost\\themes\\todo\\registration.tpl',
-      1 => 1457289655,
+      1 => 1457290187,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_56dc79bd5683f5_70697056 ($_smarty_tpl) {
+function content_56dd7960655188_75444112 ($_smarty_tpl) {
 ?>
 <div class="panel">
     <div class="panel-head">

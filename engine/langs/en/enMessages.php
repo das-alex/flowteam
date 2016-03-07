@@ -13,5 +13,7 @@ $arrayMessages = array(
         10 => "Your comment is consist of incorrect chars!",
         11 => "Your comment is out of max length!",
         12 => "Out of interval! Please, try later.",
+        13 => "Page - ",
+        14 => "Error",
 );
 ?>
