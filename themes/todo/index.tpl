@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>{$title}</title>
 	<link rel="stylesheet" href="themes/todo/css/style.css">
+	<link rel="stylesheet" href="themes/todo/css/normalize.css">
 	<link rel="stylesheet" href="themes/todo/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
 </head>

@@ -21,7 +21,7 @@
 			<span class="input_before"><i class="fa fa-key"></i></span>
 			<input type="password" name="password" placeholder="подтвердите пароль">
 		</div>
-		<input class="login_button" type="submit" name="submit">
+		<input class="login_button" type="submit" name="submit" value="Отправить">
+		<a class="link blue" href="/index.php?page=auth">На вход</a>
 	</form>
-	<a href="/index.php?page=auth">Вход</a>
 </div>
