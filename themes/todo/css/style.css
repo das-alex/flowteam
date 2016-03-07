@@ -282,52 +282,54 @@ input[type=button],[type=submit],
 .form_login {
 	position: absolute;
 	width: 400px;
-	height: 450px;
+	height: 360px;
 	background: white;
-	border-radius: 10px;
+	border-radius: 4px;
 	text-align: center;
 	margin: auto;
 	top: 50px;
 	bottom: 0;
 	left: 0;
 	right: 0;
-	box-shadow: 0 0 4px -1px #8b8b8b;
+	box-shadow: 0 0 3px -1px #a2a2a2;
 }
 
 .form_login h1 {
 	color: #272727;
-	margin: 30px 0 20px 0;
+	font-size: 28px;
+	margin: 20px 0 15px 0;
 }
 
 .form_login p {
 	color: #272727;
-	padding: 0 10px;
+	padding: 0 50px;
+	font-size: 14px;
 }
 
 .form_login form {
-	margin-top: 35px;
+	margin-top: 25px;
 }
 
 .form_login .input_before {
 	display: inline-block;
-	padding: 10px 18px;
-	border-top-left-radius: 50px;
-	border-bottom-left-radius: 50px;
+	padding: 10px 14px;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
 	background: #ececec;
-	font-size: 17px;
+	font-size: 15px;
 	position: absolute;
-	margin: 10px -20px 0 0;
+	margin: 5px -20px 0 0;
 	color: #162953;
 }
 
 .form_login input {
 	border: none;
 	background: #ececec;
-	font-size: 18px;
-	padding: 10px 0 10px 60px;
+	font-size: 15px;
+	padding: 10px 0 10px 45px;
 	width: 250px;
-	margin: 10px 0;
-	border-radius: 50px;
+	margin: 5px 0;
+	border-radius: 4px;
 	border: 1px solid #ececec;
 }
 
@@ -339,9 +341,9 @@ input[type=button],[type=submit],
 .form_login .login_button {
 	background: #4bb257;
 	color: white;
-	width: 210px;
+	width: 180px;
 	padding: 10px 20px;
-	margin-top: 30px;
+	margin-top: 20px;
 	box-shadow: 0 0 5px 0 #969696;
 	cursor: pointer;
 	border: none;
