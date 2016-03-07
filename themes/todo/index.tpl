@@ -49,7 +49,7 @@
 				</div>
 			</div>
 		</header>
-		<main>
+		<div class="main">
             <div class="main_wrapper">
                 {if $isLogin == true}
 
@@ -89,7 +89,7 @@
                         {/if}
                 {/if}
 			</div>
-		</main>
+		</div>
 	</div>
 </body>
 </html>

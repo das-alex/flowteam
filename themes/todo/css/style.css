@@ -199,11 +199,11 @@ a,input {
 
 /*MAIN START*/
 
-main {
+.main {
+	display: flex;
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
-	display: flex;
 	-webkit-box-pack: center;
 	-webkit-justify-content: center;
 	-ms-flex-pack: center;
@@ -228,9 +228,7 @@ main {
 
 /*PANEL START*/
 .panel {
-    border: 0.5px;
-    border-style: solid;
-    border-color: #d2d3d6;
+    border: 1px solid #d2d3d6;
     margin: 5px;
 }
 
